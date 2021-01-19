@@ -1,8 +1,7 @@
 # StatsAmongUs
 Discord bot that collects statistics from Among Us. It takes printscreen of stats table form the game and uses optical character recognition for excracting information. Next it puts it into local database and sends graphs back to player.
 
-<img src="/_/stats.png" />
-<img src="/_/graph.png" />
+<img src="/_/stats.png" height="280" width="262" />  <img src="/_/graph.png" height="280" width="670" />
 
 # How to use
 * Clone this repo
