@@ -1,0 +1,6 @@
+venv/
+.idea/
+*.pyc
+statistics.db
+temp/
+test_files/
