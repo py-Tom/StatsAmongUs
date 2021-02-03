@@ -4,3 +4,4 @@ venv/
 statistics.db
 temp/
 test_files/
+.vscode/

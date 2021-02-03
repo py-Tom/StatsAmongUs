@@ -19,7 +19,7 @@ async def on_message(message):
     if message.author == client.user:
         return None
 
-    if message.channel.name == "statystyki":
+    if message.channel.name == "channel name":  # paste channel name
         if message.attachments and message.content.startswith("$stats"):
             print(f"Got attachment: {message.attachments}")
             for attachment in message.attachments:
@@ -28,7 +28,7 @@ async def on_message(message):
                 save_stats(file_name, str(message.author))
                 data = select_entry(str(message.author))
                 graph_it(data)
-                channel = client.get_channel(767845541568446524)
+                channel = client.get_channel("channel id")  # paste channel id
                 await channel.send(f"{message.author.mention}'s Stats:")
                 img1 = cv2.imread(f"temp/fig_sankey_{message.author.name}.png")
                 img2 = cv2.imread(f"temp/fig_winrate_{message.author.name}.png")
